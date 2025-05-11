@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Dashboard</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <style>
+    body {
+      background-image: url('../Image/Iftu_Logo.png');
+      background-size: 90% auto; /* Adjusted width */
+      background-repeat: no-repeat;
+      background-position: center top; /* Decreased top background */
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 138vh;
+    }
+    nav a {
+  font-size: 1.2em;
+  font-weight: bold;
+  /* Existing transition property */
+  transition: color 0.3s ease;
+}
+    h1 {
+      font-size: 2.5em; /* Increased font size for h1 */
+    }
+    p {
+      font-size: 1.2em; /* Increased font size for paragraph */
+    }
+    h1, p {
+      color: blue; /* Changed text color to blue */
+      font-weight: bold; /* Made text bold */
+    }
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 10px;
+      background-color: #004d40;
+      color: white;
+    }
+    nav a {
+      transition: color 0.3s ease; /* Added hover animation */
+    }
+    nav a:hover {
+      color: #ff5722; /* Changed hover color */
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    main {
+      animation: fadeIn 2s ease-in-out; /* Added view animation */
+    }
+  </style>
+</head>
+<body>
+  <header style="padding: 1px 3px; display: flex; justify-content: space-between; align-items: center;"> <!-- Adjusted layout for horizontal alignment -->
+    <div>
+      <img src="../Image/Iftu_Logo.png" alt="IFTU IT Centre Logo" style="width: 40px; height: auto;">
+    </div>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../services.html">Services</a>
+      <a href="../News.html">News</a>
+      <a href="../files.html">Files</a>
+      <a href="../contactform.html">Contact</a>
+      <a href="../login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Welcome to the Home Dashboard</h1>
+      <p>Navigate through the links above to explore our services and resources.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 IFTU IT Centre | Kore Woreda, West Arsi Zone, Oromia</p>
+  </footer>
+</body>
+</html>

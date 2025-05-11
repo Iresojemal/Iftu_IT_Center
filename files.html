@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Files - FTU IT Centre</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Add this to your CSS file */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      padding: 50px 0;
+      margin-top: auto;
+    }
+
+    .footer-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .footer-section {
+      flex: 1;
+    }
+
+    .footer-section h3 {
+      color: #ecf0f1;
+      margin-bottom: 15px;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links a {
+      color: #bdc3c7;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #3498db;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      margin-top: 20px;
+      border-top: 1px solid #34495e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FTU IT Centre - Document Library</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+    <!-- Resources Section -->
+     <!-- CSS Styling -->
+<style>
+.resources {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.documentation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.doc-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.doc-link {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.doc-link:hover {
+  background: #f0f4f8;
+  border-radius: 4px;
+}
+
+.icon {
+  margin-right: 1rem;
+  font-size: 1.2em;
+}
+
+.doc-type {
+  margin-left: auto;
+  font-size: 0.9em;
+  color: #7f8c8d;
+}
+
+.file-tree {
+  margin-top: 1rem;
+}
+
+.folder {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid #3498db;
+}
+
+.file {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem 0;
+  display: flex;
+  align-items: center;
+}
+</style>
+<section class="resources">
+  <h2>Resources & Documentation</h2>
+  
+  <div class="documentation-grid">
+    <!-- Policy Documents -->
+    <div class="doc-card">
+      <h3>Institutional Policies</h3>
+      <ul class="policy-links">
+        <li>
+          <a href="IftuP/policy.html" class="doc-link">
+            <span class="icon">📄</span>
+            Privacy Policy
+            <span class="doc-type">(PDF, 150KB)</span>
+          </a>
+        </li>
+        <li>
+          <a href="IftuP/terms.html" class="doc-link">
+            <span class="icon">📑</span>
+            Terms of Use
+            <span class="doc-type">(PDF, 200KB)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Document Library -->
+    <div class="doc-card">
+      <h3>Document Library</h3>
+      <div class="file-tree">
+        <div class="folder">
+          📁 Public_Documents
+          <div class="file">📄 Annual_Report_2024.pdf</div>
+          <div class="file">📄 Tech_Standards.pdf</div>
+        </div>
+        <div class="folder">
+          📁 Research
+          <div class="file">📑 Research_Guidelines.docx</div>
+          <div class="file">📊 Data_Collection_Tools.zip</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <h2>Upload Document</h2>
+      <input type="file" id="uploadFile">
+      <button onclick="uploadFile()">Upload</button>
+    </section>
+    <section>
+      <h2>Download Documents</h2>
+      <ul>
+         <li><a href="files/document1.pdf" download>Download Guide</a></li>
+         <li><a href="files/document2.pdf" download>Tech Tips</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+  <div class="footer-content">
+    <!-- Contact Column -->
+    <div class="footer-section contact-info">
+      <h3>Contact Us</h3>
+      <p>Email: itcentre@ftu.edu</p>
+      <p>Phone: +251 912 345 678</p>
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </div>
+
+    <!-- Follow Us Column -->
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <ul class="footer-links">
+        <li><a href="https://www.facebook.com/FTUITCentre" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/FTUITCentre" target="_blank">Twitter</a></li>
+        <li><a href="https://www.instagram.com/FTUITCentre" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources Column -->
+    <div class="footer-section">
+      <h3>Resources</h3>
+      <ul class="footer-links">
+        <li><a href="files.html">Document Library</a></li>
+        <li><a href="policy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 FTU IT Centre. All rights reserved. | Kore Woreda, West Arsi Zone, Oromia</p>
+  </div>
+</footer>
+
+<style>
+/* Updated footer CSS */
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px; /* Reduced gap */
+}
+
+.footer-section {
+  flex: 1;
+  max-width: 200px; /* Added max-width constraint */
+}
+
+.contact-info {
+  flex: 0 0 180px; /* Fixed width for contact info */
+  max-width: 180px;
+}
+
+.footer-section h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+}
+</style>
+
+  <script src="js/main.js"></script>
+  <script>
+    function uploadFile() {
+      const file = document.getElementById('uploadFile').files[0];
+      if(file) {
+        alert('Uploaded: ' + file.name);
+      } else {
+        alert('Please choose a file.');
+      }
+    }
+  </script>
+</body>
+</html>

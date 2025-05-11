@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IFTU IT CENTER></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    }
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .testimonial, .gallery, .faq, .contact {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #004d40;
+      color: white;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div><strong>IFTU IT Centre</strong></div>
+  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">News</a>
+    <a href="#">Files</a>
+    <a href="#">Contact</a>
+    <a href="/login.html">Login</a>
+  </nav>
+</header>
+
+<section class="homepage-image">
+  <h3>
+  <img src="Image/Iftu_Logo.png" alt="IFTU Logo" style="width: 100%; max-width: 900px; display: block; margin: 0 auto;"></h3>
+  </section>
+
+<section class="testimonial">
+  <h3>Testimonials</h3>
+  <blockquote>"IFTU IT Centre has revolutionized our tech support and training!" - Customer A</blockquote>
+  <blockquote>"Their mobile IT clinic made tech services accessible to our remote community." - Customer B</blockquote>
+</section>
+
+<section class="gallery">
+  <h3>Image Gallery</h3>
+  <p>Workshop session | IT Repair | Community Event</p>
+</section>
+
+<section class="faq">
+  <h3>Frequently Asked Questions</h3>
+  <p><strong>What services does IFTU IT Centre offer?</strong><br>
+  Computer repair, agri-tech training, digital literacy programs, and a mobile IT clinic.</p>
+
+  <p><strong>How can I participate in training?</strong><br>
+  Sign up via our contact form or attend our community sessions advertised in local media.</p>
+</section>
+
+<section class="contact">
+  <h3>Contact Us</h3>
+  <form method="POST" action="/contact">
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <label>Message:</label>
+    <textarea name="message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 IFTU IT Centre | Kore Woreda, West Arsi Zone, Oromia
+</footer>
+
+</body>
+</html>

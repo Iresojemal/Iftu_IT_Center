@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News - FTU IT Centre</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>FTU IT Centre</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="files.html">Files</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Latest News</h2>
+      <article>
+         <h3>New Edu-Tech Workshop</h3>
+         <p>
+           We are excited to announce a new digital literacy workshop scheduled for next month.
+         </p>
+      </article>
+      <article>
+         <h3>Device Repair Specials</h3>
+         <p>
+           Get exclusive discounts on computer/electronics repair services for a limited time.
+         </p>
+      </article>
+    </section>
+    
+    <section>
+       <h2>Comments</h2>
+       <form id="commentForm">
+         <label for="comment">Leave a Comment:</label>
+         <textarea id="comment" required></textarea>
+         <button type="submit">Post Comment</button>
+       </form>
+       <ul id="commentsList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FTU IT Centre. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('commentForm').addEventListener('submit', function(event) {
+       event.preventDefault();
+       const commentText = document.getElementById('comment').value;
+       const newComment = document.createElement('li');
+       newComment.textContent = commentText;
+       document.getElementById('commentsList').appendChild(newComment);
+       this.reset();
+    });
+  </script>
+</body>
+</html>
